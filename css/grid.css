@@ -9,7 +9,7 @@
     }
     .row:after{
         content: '';
-        display: block;
+        /* display: block; */
         clear: both;
     }
     .col-6{

@@ -273,21 +273,23 @@
                     $('.menu-box').removeClass('show');
                 },
             );
+/*sticky*/
+window.onscroll = function () { myFunction() };
 
-            window.onscroll = function () { myFunction() };
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+console.log(sticky);
 
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-            console.log(sticky);
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                    $('#myHeader').css('backgrondColor', '#000');
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        $('#myHeader').css('backgrondColor', '#000');
+        $('#myHeader .container img').attr('src', 'images/logo-white.png')
+    } else {
+        header.classList.remove("sticky");
+        $('#myHeader .container img').attr('src', 'images/logo.png')
+    }
+}
         </script>
 
 </body>

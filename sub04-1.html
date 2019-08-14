@@ -171,6 +171,7 @@
             $('#search .container:first-child > a').removeClass('color');
         });
 
+        /*sticky*/
         window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("myHeader");
@@ -181,8 +182,10 @@
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
                 $('#myHeader').css('backgrondColor', '#000');
+                $('#myHeader .container img').attr('src', 'images/logo-white.png')
             } else {
                 header.classList.remove("sticky");
+                $('#myHeader .container img').attr('src', 'images/logo.png')
             }
         }
     </script>
