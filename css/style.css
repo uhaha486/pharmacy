@@ -167,6 +167,9 @@ a{
     display: block;
 }
 
+
+
+
 /*header*/
 header{
     background: #fff;
@@ -239,27 +242,26 @@ header{
    
 }
 
+
+
 /*quick-menu*/
 #index .quick-menu{
     position: fixed;
-    top: 400px;
-   right:20px;
+
    /* width: 100px;
    height:250px; */
-  
+
+   
 
    display: none;
 }
 #index .quick-menu.show{
     display: block;
 }
-#index .quick-menu a{
-  position: absolute;
-  right: 0;;
-}
+
 #index .quick-menu .fa{
-    font-size: 30px;
-    border: 1px solid #666;
+    font-size: 20px;
+ 
     width: 50px;
     height: 50px;
     display: block;
@@ -272,23 +274,68 @@ header{
  
   transition: .5s;
 }
-#index .quick-menu .extend{
-    border: 1px solid #666;
-    width: 180px;
-    height: 50px;
-    position: relative;
-    border-radius: 50px 50px 50px 50px;
-    display: 
-    
-}
-#index .quick-menu .extend .text{
-    position: absolute;
-    left: 20%;
-    top: 20%;
-}
 
 
 
+/*quick menu modify*/
+.quick-menu{
+    height: 400px;
+    z-index: 99999;
+ }
+ .btn-area{
+     width: 100px;
+     height: 100px;
+     position: fixed;
+    right: -80px;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    padding-left: 10px;  
+    transition: .5s;
+      
+ }
+ .btn-area:hover{
+     right: 0;
+ }
+ #nav1{
+     top: 150px;
+   
+ }
+ #nav2{
+     top: 220px;
+ }
+ #nav3{
+     top: 290px;
+ }
+ #nav4{
+     top: 360px;
+ 
+ }
+
+ .quick-menu a .fa{
+   padding-right: 5px;
+   position: absolute;
+right: 100px;
+background: #ddd;
+font-size: 30px;
+text-align: center;
+
+padding-top: 15px !important;
+
+ 
+
+  
+
+ }
+ .quick-menu h6{
+    line-height: 50px;
+    font-size: 15px;
+    color: #666;
+    text-transform: uppercase;
+    margin-left: 20px;
+ }
+ 
+
+/*quck-menu end*/
 
 
 /*search*/
@@ -1223,6 +1270,7 @@ font-size:13px;
 }
 #sub02-1 .product .container .product_box img{
     width: 386.66px;
+  
     height: 300px;
     border: 1px solid rgb(224, 224, 224);
 }
@@ -1232,6 +1280,7 @@ font-size:13px;
     margin-top: 80px;
     text-align: center;
     float: left;
+   
 }
 #sub02-1 .product .container .product_box .text h4{
     margin-top: 0.6em;
